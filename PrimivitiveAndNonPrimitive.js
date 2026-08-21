@@ -33,4 +33,7 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId);
-
+const ali=44;
+console.log(ali);
+// const ali =43
+// console.log(ali);
