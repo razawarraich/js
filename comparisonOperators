@@ -1,0 +1,19 @@
+// console.log("2" > 1);
+// console.log(2>1)
+
+console.log("5">4)
+console.log("1"==1)
+console.group("1" === 1)
+let number= null
+let StringToNO = Number(number)
+console.log(StringToNO)
+
+
+
+
+
+// console.log(null > 0);
+// console.log(null == 0)
+// console.log(null <= 0)
+
+
