@@ -73,22 +73,27 @@
 // user= Boolean(user)
 // console.log(typeof user, user);
 
-let value= ""
-value = Number(value)
-console.log(typeof value, value);
-console.log(value);
+// let value= ""
+// value = Number(value)
+// console.log(typeof value, value);
+// console.log(value);
 
 
+let person={
+    age :32,
+    name : "ali"
+};
 
+console.log(person.age, person.name);
 
+console.log(person);
+person.age=22;
+console.log(person);
 
-
-
-
-
-
-
-
+person.city= "Lahore";
+console.log(person);
+delete person.city 
+console.log(person);
 
 
 
