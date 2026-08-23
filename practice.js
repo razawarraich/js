@@ -96,20 +96,39 @@
 // console.log(person);
 
 
-let a= "Hello world"
-console.log(a.length);
-console.log(a.toUpperCase());
-console.log(a.toLowerCase());
-console.log(a.indexOf("w"));
-console.log(a.charAt(8));
-console.log(a.at(-2));
-console.log(a.charCodeAt(5));
-console.log(a.includes("ld"));
-// console.log(a.startsWith("w"));
+// let a= "Hello world"
+// console.log(a.length);
+// console.log(a.toUpperCase());
+// console.log(a.toLowerCase());
+// console.log(a.indexOf("w"));
+// console.log(a.charAt(8));
+// console.log(a.at(-2));
+// console.log(a.charCodeAt(5));
+// console.log(a.includes("ld"));
+// // console.log(a.startsWith("w"));
 
-console.log(a.startsWith("Hello"));
-console.log(a.indexOf("world"));
-console.log(a.slice(1,4));
+// console.log(a.startsWith("Hello"));
+// console.log(a.indexOf("world"));
+// console.log(a.slice(1,4));
+// console.log(a.replace("world", "hello"));
+// console.log(a.replaceAll("Hello" , "hey"));
+
+
+// Strings practice project 
+let name= "   rAzA wArRaIcH   "
+let password ="   RAZA_DEV123 "
+let email = " raza@example.com "
+let bio = "i love javascript, coding and javascript"
+
+let hobby = "JavaScript, Web Development, AI"
+
+nameFormated = name.trim()
+nameFormated= nameFormated.toUpperCase()
+newemail=email.trim()
+newbio=bio.split(" ")
+console.log(newbio);
+
+console.log(nameFormated);
 
 
 
