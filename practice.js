@@ -76,24 +76,51 @@
 // let value= ""
 // value = Number(value)
 // console.log(typeof value, value);
-// console.log(value);
+// // console.log(value);
 
 
-let person={
-    age :32,
-    name : "ali"
-};
+// let person={
+//     age :32,
+//     name : "ali"
+// };
 
-console.log(person.age, person.name);
+// console.log(person.age, person.name);
 
-console.log(person);
-person.age=22;
-console.log(person);
+// console.log(person);
+// person.age=22;
+// console.log(person);
 
-person.city= "Lahore";
-console.log(person);
-delete person.city 
-console.log(person);
+// person.city= "Lahore";
+// console.log(person);
+// delete person.city 
+// console.log(person);
+
+
+let a= "Hello world"
+console.log(a.length);
+console.log(a.toUpperCase());
+console.log(a.toLowerCase());
+console.log(a.indexOf("w"));
+console.log(a.charAt(8));
+console.log(a.at(-2));
+console.log(a.charCodeAt(5));
+console.log(a.includes("ld"));
+// console.log(a.startsWith("w"));
+
+console.log(a.startsWith("Hello"));
+console.log(a.indexOf("world"));
+console.log(a.slice(1,4));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
