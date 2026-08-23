@@ -115,20 +115,60 @@
 
 
 // Strings practice project 
-let name= "   rAzA wArRaIcH   "
-let password ="   RAZA_DEV123 "
-let email = " raza@example.com "
-let bio = "i love javascript, coding and javascript"
+// let name= "   rAzA wArRaIcH   "
+// let password ="   RAZA_DEV123 "
+// let email = " raza@example.com "
+// let bio = "i love javascript, coding and javascript"
 
-let hobby = "JavaScript, Web Development, AI"
+// let hobby = "JavaScript, Web Development, AI"
 
-nameFormated = name.trim()
-nameFormated= nameFormated.toUpperCase()
-newemail=email.trim()
-newbio=bio.split(" ")
-console.log(newbio);
+// nameFormated = name.trim()
+// nameFormated= nameFormated.toUpperCase()
+// newemail=email.trim()
+// newbio=bio.split(" ")
+// console.log(newbio);
 
-console.log(nameFormated);
+// console.log(nameFormated);
+
+
+// numbers methods
+// let num= 20
+// console.log( num1 = num.toString(2),typeof num1);
+
+// let nowdate= new Date();
+// console.log(nowdate, typeof nowdate);
+// console.log(Date.now());
+// console.log(nowdate.getDate());
+// console.log(nowdate.getFullYear());
+
+
+
+// arrays
+let arr= ['ali', 'saad', 'saud','saeed']
+console.log(arr);
+console.log(arr[2]);
+arr[2]="raza"
+console.log(arr);
+console.log(arr.length);
+arr.push("apple")
+arr.pop()
+arr.unshift("apple")
+console.log(arr);
+arr.splice(1,2)
+console.log(arr);
+arr2=['zero', 'one','two','three']
+combinedarray=arr.concat(arr2)
+console.log(combinedarray);
+console.log(combinedarray.includes('one'), combinedarray.indexOf('one'));
+console.log(combinedarray.join(","));
+console.log(combinedarray.reverse());
+console.log(combinedarray.sort());
+
+
+
+
+
+
 
 
 
