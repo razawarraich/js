@@ -1,7 +1,3 @@
-// ==========================================
-// 1. USER DATA
-// ==========================================
-
 let user = {
     id: 101,
     name: "Raza",
@@ -16,40 +12,18 @@ let user = {
 
     skills: ["JavaScript", "React", "Node.js"]
 };
-
-
-
-// ==========================================
-// 2. TYPE CONVERSION
-// ==========================================
-
-// age came from somewhere as a STRING
 console.log(typeof user.age);
 
 user.age = Number(user.age);
 
 console.log(typeof user.age);
 console.log(user.age);
-
-
-
-// ==========================================
-// 3. STRING METHODS
-// ==========================================
-
 user.name = user.name.trim().toUpperCase();
 
 user.email = user.email.toLowerCase();
 
 console.log(user.name);
 console.log(user.email);
-
-
-
-// ==========================================
-// 4. ARRAY
-// ==========================================
-
 let tasks = [
 
     {
@@ -88,28 +62,10 @@ let tasks = [
 ];
 
 
-
-// ==========================================
-// 5. ARRAY LENGTH
-// ==========================================
-
 console.log("Total tasks:", tasks.length);
-
-
-
-// ==========================================
-// 6. ACCESSING ARRAY ELEMENT
-// ==========================================
-
 console.log(tasks[0]);
 
 console.log(tasks[0].title);
-
-
-
-// ==========================================
-// 7. ADDING A TASK WITH PUSH()
-// ==========================================
 
 tasks.push({
     id: 4,
@@ -121,21 +77,7 @@ tasks.push({
     assignedTo: "Raza",
     tags: ["node", "backend"]
 });
-
-
-
-// ==========================================
-// 8. MODIFYING ARRAY ELEMENT
-// ==========================================
-
 tasks[1].priority = "high";
-
-
-
-// ==========================================
-// 9. FUNCTIONS + PARAMETERS + RETURN
-// ==========================================
-
 function calculateProgress(tasks) {
 
     let completedTasks = tasks.filter(function(task) {
@@ -154,11 +96,6 @@ let progress = calculateProgress(tasks);
 console.log("Progress:", progress);
 
 
-
-// ==========================================
-// 10. ARROW FUNCTION
-// ==========================================
-
 let getTaskTitles = (tasks) => {
 
     return tasks.map(task => task.title);
@@ -166,14 +103,6 @@ let getTaskTitles = (tasks) => {
 };
 
 console.log(getTaskTitles(tasks));
-
-
-
-// ==========================================
-// 11. MAP()
-// ==========================================
-
-// Add a status property to every task
 
 let taskStatus = tasks.map(task => {
 
@@ -186,14 +115,6 @@ let taskStatus = tasks.map(task => {
 
 console.log(taskStatus);
 
-
-
-// ==========================================
-// 12. FILTER()
-// ==========================================
-
-// Get only high priority tasks
-
 let highPriorityTasks = tasks.filter(task => {
 
     return task.priority === "high";
@@ -201,15 +122,6 @@ let highPriorityTasks = tasks.filter(task => {
 });
 
 console.log(highPriorityTasks);
-
-
-
-// ==========================================
-// 13. FIND()
-// ==========================================
-
-// Find a specific task
-
 let task = tasks.find(task => {
 
     return task.id === 2;
@@ -217,13 +129,6 @@ let task = tasks.find(task => {
 });
 
 console.log(task);
-
-
-
-// ==========================================
-// 14. SOME()
-// ==========================================
-
 let hasCompletedTask = tasks.some(task => {
 
     return task.completed === true;
@@ -231,13 +136,6 @@ let hasCompletedTask = tasks.some(task => {
 });
 
 console.log("Has completed task:", hasCompletedTask);
-
-
-
-// ==========================================
-// 15. EVERY()
-// ==========================================
-
 let everyoneAssignedToRaza = tasks.every(task => {
 
     return task.assignedTo === "Raza";
@@ -245,15 +143,6 @@ let everyoneAssignedToRaza = tasks.every(task => {
 });
 
 console.log("All assigned to Raza:", everyoneAssignedToRaza);
-
-
-
-// ==========================================
-// 16. REDUCE()
-// ==========================================
-
-// Count total number of tags
-
 let totalTags = tasks.reduce((total, task) => {
 
     return total + task.tags.length;
@@ -261,13 +150,6 @@ let totalTags = tasks.reduce((total, task) => {
 }, 0);
 
 console.log("Total tags:", totalTags);
-
-
-
-// ==========================================
-// 17. INCLUDES()
-// ==========================================
-
 let javascriptTaskExists = tasks.some(task => {
 
     return task.tags.includes("javascript");
@@ -275,13 +157,6 @@ let javascriptTaskExists = tasks.some(task => {
 });
 
 console.log("JavaScript task exists:", javascriptTaskExists);
-
-
-
-// ==========================================
-// 18. OBJECT DESTRUCTURING
-// ==========================================
-
 let {
     name,
     age,
@@ -291,35 +166,15 @@ let {
 console.log(name);
 console.log(age);
 console.log(city);
-
-
-
-// ==========================================
-// 19. NESTED OBJECT DESTRUCTURING
-// ==========================================
-
 let {
     address: { country }
 } = user;
 
 console.log(country);
-
-
-
-// ==========================================
-// 20. ARRAY DESTRUCTURING
-// ==========================================
-
 let [firstSkill, secondSkill] = user.skills;
 
 console.log(firstSkill);
 console.log(secondSkill);
-
-
-
-// ==========================================
-// 21. REST PARAMETER
-// ==========================================
 
 function calculateTotal(...numbers) {
 
@@ -332,12 +187,6 @@ function calculateTotal(...numbers) {
 }
 
 console.log(calculateTotal(10, 20, 30, 40));
-
-
-
-// ==========================================
-// 22. DEFAULT PARAMETER
-// ==========================================
 
 function createTask(title, priority = "medium") {
 
@@ -353,12 +202,6 @@ console.log(createTask("Study Arrays"));
 
 console.log(createTask("Study Objects", "high"));
 
-
-
-// ==========================================
-// 23. OBJECT METHOD + THIS
-// ==========================================
-
 let taskManager = {
 
     name: "Raza's Task Manager",
@@ -372,13 +215,6 @@ let taskManager = {
 };
 
 taskManager.showName();
-
-
-
-// ==========================================
-// 24. DATE AND TIME
-// ==========================================
-
 let now = new Date();
 
 console.log("Current date:", now);
@@ -395,21 +231,9 @@ console.log("Minutes:", now.getMinutes());
 
 console.log("Seconds:", now.getSeconds());
 
-
-
-// ==========================================
-// 25. DATE OBJECT FOR TASK
-// ==========================================
-
 let dueDate = new Date(tasks[0].dueDate);
 
 console.log("Task due date:", dueDate);
-
-
-
-// ==========================================
-// 26. DATE COMPARISON
-// ==========================================
 
 let today = new Date();
 
@@ -424,39 +248,14 @@ if (taskDueDate > today) {
     console.log("Task deadline has passed.");
 
 }
-
-
-
-// ==========================================
-// 27. TIMESTAMP
-// ==========================================
-
 console.log("Current timestamp:", Date.now());
 
 console.log("Task timestamp:", taskDueDate.getTime());
-
-
-
-// ==========================================
-// 28. JSON.stringify()
-// ==========================================
-
-// Convert JavaScript object/array into JSON
-
 let jsonData = JSON.stringify(tasks);
 
 console.log(jsonData);
 
 console.log(typeof jsonData);
-
-
-
-// ==========================================
-// 29. JSON.parse()
-// ==========================================
-
-// Convert JSON back into JavaScript data
-
 let parsedTasks = JSON.parse(jsonData);
 
 console.log(parsedTasks);
@@ -464,30 +263,14 @@ console.log(parsedTasks);
 console.log(typeof parsedTasks);
 
 
-
-// ==========================================
-// 30. OPTIONAL CHAINING
-// ==========================================
-
 console.log(user.address?.city);
 
 console.log(user.company?.name);
 
 
-
-// ==========================================
-// 31. NULLISH COALESCING
-// ==========================================
-
 let company = user.company?.name ?? "No company";
 
 console.log(company);
-
-
-
-// ==========================================
-// 32. SPREAD OPERATOR
-// ==========================================
 
 let updatedUser = {
 
@@ -499,12 +282,6 @@ let updatedUser = {
 
 console.log(updatedUser);
 
-
-
-// ==========================================
-// 33. STRING SEARCH
-// ==========================================
-
 function searchTasks(keyword) {
 
     return tasks.filter(task => {
@@ -514,99 +291,30 @@ function searchTasks(keyword) {
             .includes(keyword.toLowerCase());
 
     });
-
 }
-
 console.log(searchTasks("javascript"));
-
-
-
-// ==========================================
-// 34. REMOVE LAST TASK
-// ==========================================
-
 let removedTask = tasks.pop();
-
 console.log("Removed:", removedTask);
-
-
-
-// ==========================================
-// 35. REMOVE FIRST TASK
-// ==========================================
-
 let firstTask = tasks.shift();
-
 console.log("Removed first:", firstTask);
-
-
-
-// ==========================================
-// 36. ADD TASK TO BEGINNING
-// ==========================================
-
 tasks.unshift({
-
     id: 5,
     title: "Practice Functions",
     priority: "high",
     completed: false
 
 });
-
-
-
-// ==========================================
-// 37. SPLICE()
-// ==========================================
-
-// Replace one task
-
 tasks.splice(1, 1, {
-
     id: 6,
     title: "Practice Objects",
     priority: "high",
     completed: false
-
 });
-
-
-
-// ==========================================
-// 38. SLICE()
-// ==========================================
-
 let firstTwoTasks = tasks.slice(0, 2);
-
 console.log(firstTwoTasks);
-
-
-
-// ==========================================
-// 39. JOIN()
-// ==========================================
-
 let skillsString = user.skills.join(", ");
-
 console.log(skillsString);
-
-
-
-// ==========================================
-// 40. ARRAY CHECK
-// ==========================================
-
 console.log(Array.isArray(tasks));
-
 console.log(Array.isArray(user));
-
-
-
-// ==========================================
-// FINAL RESULT
-// ==========================================
-
 console.log("FINAL TASKS:");
-
 console.log(tasks);
